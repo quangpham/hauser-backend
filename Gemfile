@@ -10,15 +10,19 @@ gem 'sqlite3'
 gem 'mysql2'
 
 gem 'devise'
+
 # gem 'simple_token_authentication'
 gem 'pundit'
 gem 'nexmo'
 gem 'firebase'
 
-group :development do
-  gem 'thin'
-  gem 'rack-cors', :require => 'rack/cors'
-end
+# group :development do
+#   gem 'thin'
+#   gem 'rack-cors', :require => 'rack/cors'
+# end
+
+gem 'thin'
+gem 'rack-cors', :require => 'rack/cors'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -27,7 +31,7 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano', :group => :development
