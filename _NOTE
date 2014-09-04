@@ -1,2 +1,12 @@
 docker build -t rails hauser-backend/
 docker run -p 80:80 rails
+
+Dung docker-mysql
+git clone https://github.com/quangpham/docker-mysql.git
+cd docker-mysql
+docker build -t="quangpham/mysql" .
+docker run --name mysql -d quangpham/mysql
+--> get ip address of mysql
+
+
+
