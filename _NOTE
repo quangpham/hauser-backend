@@ -1,0 +1,2 @@
+docker build -t rails hauser-backend/
+docker run -p 80:80 rails
