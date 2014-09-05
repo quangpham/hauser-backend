@@ -42,6 +42,7 @@ RUN /bin/bash -l -c "bundle install"
 
 # Publish port 80
 EXPOSE 80
+EXPOSE 3306
 
 VOLUME ["/var/lib/mysql"]
 VOLUME ["/var/run/mysqld"]
