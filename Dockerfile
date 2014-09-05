@@ -9,7 +9,7 @@ RUN apt-get install -qy curl
 RUN apt-get install -qy nodejs
 
 # Install mysql
-RUN apt-get install libmysqld-dev libmysqlclient-dev mysql-client mysql-server
+RUN apt-get install -qy libmysqld-dev libmysqlclient-dev mysql-client mysql-server
 RUN rm -rf /var/lib/mysql/mysql
 RUN rm -rf /var/lib/apt/lists/* # 20140818
 
